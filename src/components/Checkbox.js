@@ -8,7 +8,7 @@ const Checkbox = (props) => {
     }
   };
   return (
-    <label className="flex items-center justify-start cursor-pointer checkbox">
+    <label className="flex items-center justify-start cursor-pointer checkbox mobile-product_text">
       <input
         ref={inputRef}
         onChange={onChange}
@@ -16,7 +16,7 @@ const Checkbox = (props) => {
         type="checkbox"
         className="w-0 h-0 abosolute opacity-0 cursor-pointer"
       />
-      <span className="w-[18px] h-[18px] mr-[10px] border border-slate-400  checkmark">
+      <span className="w-[18px] h-[18px] mr-[10px] border border-slate-400   checkmark">
         <FaCheck className="icon-check w-[13px] h-[13px] m-auto "></FaCheck>
       </span>
       {props.label}

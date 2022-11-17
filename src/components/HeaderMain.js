@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HeaderMain = () => {
   return (
     <div>
-      <div className="w-full max-w-[1300px] flex items-center mx-auto justify-between mt-5">
+      <div className=" w-full max-w-[1300px] flex items-center mx-auto justify-between mt-5 mobile-header">
         <div className="w-[300px] h-[75px]">
           <img
             className="w-full h-full object-cover"

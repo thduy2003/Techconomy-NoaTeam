@@ -88,11 +88,13 @@ const ProductsPage = () => {
     updateProducts();
   }, [updateProducts]);
   return (
-    <div className="flex items-start justify-start  max-w-[1300px] mx-auto">
-      <div className="productPage-left w-[20%] border-4 border-[#A04646] p-2 ">
-        <div className="w-full text-[25px]">Danh mục sản phẩm</div>
+    <div className="flex items-start justify-start  max-w-[1300px] mx-auto mobile-product">
+      <div className="productPage-left w-[20%] border-4 border-[#A04646] p-2 mobile-product_dmsp ">
+        <div className="w-full text-[25px] mobile-product_text">
+          Danh mục sản phẩm
+        </div>
         <div className="mt-4">
-          <h3 className="text-[#A04646] text-[25px] font-bold">
+          <h3 className="text-[#A04646] text-[25px] font-bold mobile-product_text">
             Loại sản phẩm
           </h3>
           {category.map((item, index) => (
@@ -109,7 +111,9 @@ const ProductsPage = () => {
           ))}
         </div>
         <div className="mt-4">
-          <h3 className="text-[#A04646] text-[25px] font-bold">Màu sắc</h3>
+          <h3 className="text-[#A04646] text-[25px] font-bold mobile-product_text">
+            Màu sắc
+          </h3>
           {colors.map((item, index) => (
             <div className="mb-4">
               <Checkbox
@@ -122,7 +126,9 @@ const ProductsPage = () => {
           ))}
         </div>
         <div className="mt-4">
-          <h3 className="text-[#A04646] text-[25px] font-bold">Kích thước</h3>
+          <h3 className="text-[#A04646] text-[25px] font-bold mobile-product_text">
+            Kích thước
+          </h3>
           {size.map((item, index) => (
             <div className="mb-4">
               <Checkbox

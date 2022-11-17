@@ -10,6 +10,9 @@
       width: 100%;
       height: 544px;
       object-fit: cover;
+      @media (max-width: 560px) {
+        height: 200px;
+      }
     }
   }
   .slick-prev,
@@ -31,6 +34,9 @@
   .slick-prev:before,
   .slick-next:before {
     font-size: 4rem;
+    @media (max-width: 560px) {
+      font-size: 2rem;
+    }
   }
   .slick-dots li button:before {
     font-size: 1.2rem;
@@ -76,4 +82,80 @@
 }
 .color-red {
   background-color: red;
+}
+.mobile-header {
+  @media (max-width: 560px) {
+    display: none;
+  }
+}
+.mobile-slider {
+  @media (max-width: 560px) {
+    max-width: 350px;
+  }
+}
+.mobile-policy {
+  @media (max-width: 560px) {
+    max-width: 350px;
+    .mobile-policy_name {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .mobile-policy_desc {
+      font-size: 8px;
+    }
+  }
+}
+.mobile-dmsp {
+  @media (max-width: 560px) {
+    font-size: 20px;
+  }
+}
+.mobile-dmsp_a {
+  @media (max-width: 560px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.mobile-dmsp_b {
+  @media (max-width: 560px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.mobile-dmsp_c {
+  @media (max-width: 560px) {
+    width: 40px;
+    height: 30px;
+  }
+}
+.mobile-dmsp_d {
+  @media (max-width: 560px) {
+    font-size: 10px;
+  }
+}
+.mobile-product {
+  @media (max-width: 560px) {
+    max-width: 350px;
+  }
+}
+.mobile-product_dmsp {
+  @media (max-width: 560px) {
+    padding: 0;
+  }
+}
+.mobile-product_text {
+  @media (max-width: 560px) {
+    font-size: 10px;
+  }
+}
+.mobile-product_picture {
+  @media (max-width: 560px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+.mobile-product_button {
+  @media (max-width: 560px) {
+    padding: 5px;
+  }
 }

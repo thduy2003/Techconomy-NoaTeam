@@ -24,7 +24,7 @@ const Silder = () => {
   };
 
   return (
-    <div className="slider max-w-[1300px] mx-auto mt-4">
+    <div className="slider max-w-[1300px] mx-auto mt-4 mobile-slider">
       <Slider {...settings}>
         <div className="slider__item">
           <img
