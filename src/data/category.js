@@ -1,15 +1,15 @@
 const category = [
   {
-    display: "Áo thun",
-    categorySlug: "ao-thun",
+    display: "Mắt kính",
+    categorySlug: "mat-kinh",
   },
   {
-    display: "Áo somi",
-    categorySlug: "ao-somi",
+    display: "Nón",
+    categorySlug: "non",
   },
   {
-    display: "Quần jean",
-    categorySlug: "quan-jean",
+    display: "Bông tai",
+    categorySlug: "bong-tai",
   },
 ];
 

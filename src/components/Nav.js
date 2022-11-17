@@ -5,12 +5,12 @@ const ListLink = [
   {
     id: 1,
     to: "/",
-    title: "Home",
+    title: "Trang Chủ",
   },
   {
     id: 2,
     to: "/catalog",
-    title: "Product",
+    title: "Sản phẩm",
   },
   {
     id: 3,
@@ -20,14 +20,14 @@ const ListLink = [
   {
     id: 4,
     to: "/contact",
-    title: "Contact Us",
+    title: "Liên lạc",
   },
 ];
 
 const Nav = () => {
   return (
     <>
-      <div className="flex items-center justify-center p-5 bg-white shadow-md gap-x-5">
+      <div className="flex items-center justify-center p-5 bg-white text-[#A04646] shadow-md gap-x-5">
         {ListLink.map((item) => (
           <NavLink
             to={item.to}

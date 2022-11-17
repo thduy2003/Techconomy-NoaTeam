@@ -14,11 +14,14 @@ const HeaderMain = () => {
         </div>
         <div className="flex flex-1 items-center">
           <input
-            className="w-full p-3 border border-slate-500 outline-none"
+            className="w-full p-3 border border-slate-500 outline-none rounded-2xl"
             type="text"
             placeholder="Search for products"
           />
-          <a className=" p-4 bg-green-500 border-2 border-slate-300" href="/#">
+          <a
+            className=" p-4 bg-[#A04646] border-2 border-slate-300 rounded-2xl"
+            href="/#"
+          >
             <FaSearch />
           </a>
         </div>

@@ -18,11 +18,13 @@ const ProductCard = (props) => {
           {/* <img src={props.img02} alt="" /> */}
         </div>
         <h3 className="product-card__name">{props.name}</h3>
-        <div className="product-card__price">Giá bán: {props.price}</div>
+        <div className="product-card__price text-orange-600">
+          Giá bán: {props.price}
+        </div>
       </Link>
       <div className="product-card__btn ">
         <button
-          className="inline-block p-3 bg-green-400 boder border-slate-400 mb-3"
+          className="inline-block p-3 bg-green-400 boder border-slate-400 mb-3 rounded-lg"
           onClick={() => dispatch(set(props.slug))}
         >
           Chọn mua

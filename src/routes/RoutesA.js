@@ -10,16 +10,18 @@ const RoutesA = () => {
     <div>
       <Routes>
         <Route path="/" element={<Nav></Nav>}>
-          <Route path="/" element={<HomePage> </HomePage>}></Route>
+          <Route exact path="/" element={<HomePage> </HomePage>}></Route>
           <Route
+            exact
             path="/catalog"
             element={<ProductsPage></ProductsPage>}
           ></Route>
           <Route
+            exact
             path="/catalog/:productSlug"
             element={<ProductDetail></ProductDetail>}
           />
-          <Route path="/cart" element={<CartPage></CartPage>}></Route>
+          <Route exact path="/cart" element={<CartPage></CartPage>}></Route>
         </Route>
         <Route path="*" element={<>This is 404 page</>}></Route>
       </Routes>

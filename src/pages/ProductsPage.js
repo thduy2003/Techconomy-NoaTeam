@@ -89,9 +89,12 @@ const ProductsPage = () => {
   }, [updateProducts]);
   return (
     <div className="flex items-start justify-start  max-w-[1300px] mx-auto">
-      <div className="productPage-left w-[20%] ">
-        <div className="w-full">Danh mục sản phẩm</div>
+      <div className="productPage-left w-[20%] border-4 border-[#A04646] p-2 ">
+        <div className="w-full text-[25px]">Danh mục sản phẩm</div>
         <div className="mt-4">
+          <h3 className="text-[#A04646] text-[25px] font-bold">
+            Loại sản phẩm
+          </h3>
           {category.map((item, index) => (
             <div className="mb-4">
               <Checkbox
@@ -106,6 +109,7 @@ const ProductsPage = () => {
           ))}
         </div>
         <div className="mt-4">
+          <h3 className="text-[#A04646] text-[25px] font-bold">Màu sắc</h3>
           {colors.map((item, index) => (
             <div className="mb-4">
               <Checkbox
@@ -118,6 +122,7 @@ const ProductsPage = () => {
           ))}
         </div>
         <div className="mt-4">
+          <h3 className="text-[#A04646] text-[25px] font-bold">Kích thước</h3>
           {size.map((item, index) => (
             <div className="mb-4">
               <Checkbox
@@ -152,19 +157,21 @@ const ProductsPage = () => {
               img01={item.image01}
               img02={item.image02}
               name={item.title}
-              price={Number(item.price)}
+              price={Number(item.price).toLocaleString() + "VNĐ"}
               slug={item.slug}
             ></ProductCard>
           ))}
         </div>
-        <a
-          href="https://thduy2003.github.io/AR-NOA/"
-          className="ml-3 inline-block p-3 bg-blue-400 boder border-slate-400 mb-3"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Mô phỏng các sản phẩm bằng AR
-        </a>
+        <div className="text-center">
+          <a
+            href="https://thduy2003.github.io/AR-NOA/"
+            className=" inline-block p-3 bg-blue-400 boder border-slate-400 mb-3 rounded-2xl "
+            target="_blank"
+            rel="noreferrer"
+          >
+            Thử sản phẩm với Web AR
+          </a>
+        </div>
       </div>
     </div>
   );

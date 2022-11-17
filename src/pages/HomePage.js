@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Silder from "../components/Silder";
 import { PolicyData } from "../data/PolicyData";
-
+import { FaGlasses, FaHatCowboy, FaRing } from "react-icons/fa";
 const HomePage = () => {
   return (
     <div>
@@ -21,6 +21,34 @@ const HomePage = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="section-category">
+        <div className="max-w-[1300px] mx-auto">
+          <h1 className="text-center text-[#A04646] text-[50px]">
+            Danh mục sản phẩm
+          </h1>
+          <div className="flex justify-center mt-[30px]">
+            <div className="text-center ">
+              <div className="rounded-full flex items-center justify-center w-[100px] h-[100px] bg-[#D9D9D9]">
+                <FaGlasses className="w-[100px] h-[50px]"></FaGlasses>
+              </div>
+              <h3 className="text-[20px]">Kính mắt</h3>
+            </div>
+
+            <div className="text-center mx-[150px] ">
+              <div className="rounded-full flex items-center justify-center w-[100px] h-[100px] bg-[#D9D9D9]">
+                <FaHatCowboy className="w-[100px] h-[50px]"></FaHatCowboy>
+              </div>
+              <h3 className="text-[20px]">Nón</h3>
+            </div>
+            <div className="text-center ">
+              <div className="rounded-full flex items-center justify-center w-[100px] h-[100px] bg-[#D9D9D9]">
+                <FaRing className="w-[100px] h-[50px]"></FaRing>
+              </div>
+              <h3 className="text-[20px]">Bông tai</h3>
+            </div>
+          </div>
         </div>
       </section>
     </div>
